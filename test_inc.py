@@ -20,13 +20,13 @@ class TestFun:
         assert inc(a, b) == -33
 
     @pytest.mark.may
-    @pytest.mark.smoke
+    @pytest.mark.logic
     @pytest.mark.parametrize("a,b", [(18, -20)])
     def test_positive_plus_negative(self, a, b):
         assert inc(a, b) == -2
 
     @pytest.mark.may
-    @pytest.mark.smoke
+    @pytest.mark.logic
     @pytest.mark.parametrize("a,b", [(1.2, 2.3)])
     def test_decimal(self, a, b):
         assert inc(a, b) == 3.5
